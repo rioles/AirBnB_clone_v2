@@ -29,7 +29,7 @@ def python_variable_name(text='is cool'):
 
 @app.route('/number/<int:n>', strict_slashes=False)
 def accept_only_int(n):
-    return f"{n} is a number"
+    return "{} is a number".format(n)
 
 
 if __name__ == "__main__":
