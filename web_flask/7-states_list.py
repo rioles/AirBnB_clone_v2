@@ -8,7 +8,7 @@ from models import storage
 from flask import Flask
 from flask import render_template
 
-app = Flask(__name__)
+app = Flask("__name__")
 
 
 @app.route("/states_list", strict_slashes=False)
